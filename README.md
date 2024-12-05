@@ -63,7 +63,7 @@ Use``` from tire_cpd.functions import cpd ``` to import the change point detecti
 
 ### 2.2.1 model training
 Use``` diamond.train_model(windows, window_size, enable_summary, verbose, nr_epochs, nr_patience) ``` to train the diamond loss TIRE model.
-- windows: 3-dimensional tensors with size of (nr_windows_per_channel, window_size, nr_channels). Input time windows from either time domain or frequency domain.
+- **windows**: 3-dimensional tensors with size of (nr_windows_per_channel, window_size, nr_channels). Input time windows from either time domain or frequency domain.
 - **window_size**: scalar. Determine the selected window size.
 - **verbose**: scalar, can be set as 0, 1, or 2. Verbosity mode. 0 = silent, 1 = one line per epoch, 2 = more training details.
 - **enable_summary**: boolean. Enable the summary of used model.
