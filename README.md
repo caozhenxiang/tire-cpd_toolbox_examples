@@ -1,7 +1,7 @@
 Examples for TIRE-cpd toolbox 
 ===============================
 
-Toolbox for time-invariant representation autoencoder approach (TIRE) for change point detection (CPD) task. Including three models: TIRE model with diamond loss [1], multi-channel TIRE model [2], and multi-view TIRE model [3].
+Toolbox for time-invariant representation autoencoder approach (TIRE) for change point detection (CPD) task, including three models: TIRE model with diamond loss [1], multi-channel TIRE model [2], and multi-view TIRE model [3].
 
 The authors of these papers are:
 
