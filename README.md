@@ -21,7 +21,7 @@ pip3 install tire-cpd
 # 2. Usage
 Here we simply explain the models contained in tire-cpd toolbox and their main functions:
 
-## 2.1 Multichannel
+## 2.1 Multichannel model [2]
 Implementation of MC-TIRE model [2]. This model is designed for multi-channel time series deliberately and can considerate the inter-channel coherence (spatial) structure explicitly. 
 
 Use``` from tire_cpd.models import multichannel ``` to import this model.
@@ -54,7 +54,7 @@ Use``` dissimilarities = cpd.smoothened_dissimilarity_measures_multichannel(enco
 
 Use``` cpd.show_result_multi_channel(window_size, dissimilarities, rec_AS_E_var, rec_B_E_var) ``` to identify change points. If models are trained in both domains, use the averaged values of rec_AS_E_var, rec_B_E_var from both domains.
 
-## 2.2 Diamond
+## 2.2 Diamond loss TIRE model [1]
 Implementation of diamond loss TIRE model [1]. This model is designed for change point detection in low-dimensional time series. If the domain-specific knowledge is unknown, the multiview model is more recommended. 
 
 Use``` from tire_cpd.models import diamond ``` to import this model.
@@ -79,7 +79,7 @@ Use``` dissimilarities = smoothened_dissimilarity_measures(encoded_windows_TD, e
 
 Use``` cpd.show_result(dissimilarities, window_size) ``` to identify change points. 
 
-## 2.3 Multiview
+## 2.3 Multiview TIRE model [3]
 Implementation of multi-view TIRE model [3]. This model is designed for change point detection in low-dimensional time series, when the domain-specific knowledge is unknown.
 
 Use``` from tire_cpd.models import multiview ``` to import this model.
