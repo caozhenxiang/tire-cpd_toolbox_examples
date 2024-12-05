@@ -17,6 +17,7 @@ To install the tire-cpd package, one can easily run the following code to obtain
 ```
 pip3 install tire-cpd
 ```
+All required dependencies are included. Installation in a new conda virtual envoronment is highly recommended.
 
 # 2. Usage
 Here we simply explain the models contained in tire-cpd toolbox and their main functions:
